@@ -1,0 +1,9 @@
+services:
+
+  wmt-lab-test-backend:
+    build: ../backend
+    container_name: wmt-lab-test-backend
+    expose:
+      - "5000"
+    env_file:
+      - .env
